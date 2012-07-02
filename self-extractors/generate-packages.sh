@@ -25,12 +25,13 @@
 # 239410 = IML74K
 # 262866 = IMM30D
 # 299849 = IMM76D
+# 345519 = IMM76L
 # end ics-mr1
 BRANCH=ics-mr1
 if test $BRANCH=ics-mr1
 then
-  ZIP=sojus-ota-299849.zip
-  BUILD=imm76d
+  ZIP=sojus-ota-345519.zip
+  BUILD=imm76l
 fi # ics-mr1
 ROOTDEVICE=crespo
 DEVICE=crespo4g
@@ -108,14 +109,6 @@ do
     if test $ONE_FILE = system/vendor/bin/gpsd -o $ONE_FILE = system/vendor/bin/pvrsrvinit
     then
       chmod a+x $FILEDIR/$(basename $ONE_FILE) || echo \ \ \ \ Error chmoding $ONE_FILE
-    fi
-    if test $(echo $ONE_FILE | grep \\.apk\$ | wc -l) = 1
-    then
-      echo \ \ \ \ Splitting $ONE_FILE
-      mkdir -p $FILEDIR/$(basename $ONE_FILE).parts || echo \ \ \ \ Error making parts dir for $ONE_FILE
-      unzip $FILEDIR/$(basename $ONE_FILE) -d $FILEDIR/$(basename $ONE_FILE).parts > /dev/null || echo \ \ \ \ Error unzipping $ONE_FILE
-      rm $FILEDIR/$(basename $ONE_FILE) || echo \ \ \ \ Error removing original $ONE_FILE
-      rm -rf $FILEDIR/$(basename $ONE_FILE).parts/META-INF || echo \ \ \ \ Error removing META-INF for $ONE_FILE
     fi
   done
   echo \ \ Setting up $COMPANY-specific makefiles
