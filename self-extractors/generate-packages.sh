@@ -25,6 +25,7 @@
 # 239410 = IML74K
 # 262866 = IMM30D
 # 299849 = IMM76D
+# 345519 = IMM76L
 # end ics-mr1
 # start jb-dev
 # 391496 = JRN83D
@@ -32,8 +33,8 @@
 BRANCH=jb-dev
 if test $BRANCH=ics-mr1
 then
-  ZIP=sojus-ota-299849.zip
-  BUILD=imm76d
+  ZIP=sojus-ota-345519.zip
+  BUILD=imm76l
 fi # ics-mr1
 if test $BRANCH=jb-dev
 then
