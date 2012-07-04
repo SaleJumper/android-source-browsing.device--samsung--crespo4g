@@ -29,6 +29,7 @@
 # end ics-mr1
 # start jb-dev
 # 391496 = JRN83D
+# 397816 = JRN03B
 # end jb-dev
 BRANCH=jb-dev
 if test $BRANCH=ics-mr1
@@ -38,9 +39,9 @@ then
 fi # ics-mr1
 if test $BRANCH=jb-dev
 then
-  ZIP=sojus-ota-391496.zip
-  BUILD=jrn83d
-fi # ics-mr1
+  ZIP=sojus-ota-397816.zip
+  BUILD=jro03b
+fi # jb-dev
 ROOTDEVICE=crespo
 DEVICE=crespo4g
 MANUFACTURER=samsung
