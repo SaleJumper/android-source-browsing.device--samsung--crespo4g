@@ -17,12 +17,13 @@
 # 185293 = GWK74
 # 299849 = IMM76D
 # 397360 = JRO02C
+# 398337 = JRO03C
 
 source ../../../common/clear-factory-images-variables.sh
 PRODUCT=sojus
 DEVICE=crespo4g
-BUILD=397360
-VERSION=jro02c
+BUILD=398337
+VERSION=jro03c
 SRCPREFIX=signed-
 BOOTLOADER=d720sprke1
 BOOTLOADERSRC=bootloader.pr.img
