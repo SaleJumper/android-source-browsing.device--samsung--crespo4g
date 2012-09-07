@@ -18,15 +18,16 @@
 # 299849 = IMM76D
 # 397360 = JRO02C
 # 398337 = JRO03C
+# 438695 = JRO03R
 
 source ../../../common/clear-factory-images-variables.sh
 PRODUCT=sojus
 DEVICE=crespo4g
-BUILD=398337
-VERSION=jro03c
+BUILD=438695
+VERSION=jro03r
 SRCPREFIX=signed-
-BOOTLOADER=d720sprke1
+BOOTLOADER=d720sprlc1
 BOOTLOADERSRC=bootloader.pr.img
-RADIO=d720sprlc1
+RADIO=d720sprlf2
 RADIOSRC=radio.pr.img
 source ../../../common/generate-factory-images-common.sh
